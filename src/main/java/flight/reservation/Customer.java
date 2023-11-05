@@ -3,6 +3,8 @@ package flight.reservation;
 import flight.reservation.flight.ScheduledFlight;
 import flight.reservation.order.FlightOrder;
 import flight.reservation.order.Order;
+import flight.reservation.payment.CreditCard;
+import flight.reservation.payment.Payment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,7 @@ public class Customer {
     private String email;
     private String name;
     private List<Order> orders;
+    private List<Payment> payments;
 
     public Customer(String name, String email) {
         this.name = name;

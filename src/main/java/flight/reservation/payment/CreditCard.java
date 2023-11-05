@@ -5,19 +5,20 @@ import java.util.Date;
 /**
  * Dummy credit card class.
  */
-public class CreditCard {
+public class CreditCard extends Payment {
     private double amount;
-    private String number;
-    private Date date;
-    private String cvv;
+    private final String number;
+    private final Date date;
+    private final String cvv;
     private boolean valid;
 
-    public CreditCard(String number, Date date, String cvv) {
-        this.amount = 100000;
+    public CreditCard(int amount, String number, Date date, String cvv) {
+        this.amount = amount;
         this.number = number;
         this.date = date;
         this.cvv = cvv;
         this.setValid();
+
     }
 
     public void setAmount(double amount) {

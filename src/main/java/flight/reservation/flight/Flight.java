@@ -32,7 +32,7 @@ public class Flight {
         return Arrays.stream(airport.getAllowedAircrafts()).anyMatch(x -> {
             String model;
             if (this.aircraft instanceof PassengerPlane) {
-                model = ((PassengerPlane) this.aircraft).model;
+                model = ((PassengerPlane) this.aircraft).getModel();
             } else if (this.aircraft instanceof Helicopter) {
                 model = ((Helicopter) this.aircraft).getModel();
             } else if (this.aircraft instanceof PassengerDrone) {
