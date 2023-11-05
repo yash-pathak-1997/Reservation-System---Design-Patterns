@@ -56,4 +56,16 @@ public class Runner implements Runnable {
         Object command_history = this.history.getHistory();
         System.out.println(command_history);
     }
+
+    public List<Aircraft> getAircrafts() {
+        return null;
+    }
+
+    public List<Airport> getAirports() {
+        return null;
+    }
+
+    public List<Flight> getFlights() {
+        return null;
+    }
 }
