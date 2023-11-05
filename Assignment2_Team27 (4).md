@@ -2,7 +2,7 @@
 
 **Design Pattern Implementation** 
 
-Group 27 Members- ![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.001.png)
+Group 27 Members- ![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.001.png)
 
 Yash Pathak – 2022201026 Gaurav Khapekar – 2022201055 Vivek Kirpan – 2022201071 Adarsh – 2022201081  
 
@@ -35,7 +35,7 @@ Following are the design patterns implemented:
 - The Factory Method separates product construction code from the code that actually uses the product. Therefore it’s easier to extend the product construction code independently from the rest of the code. 
 - Following is the factory pattern implementation: 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.002.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.002.png)
 
 - **Task 1:** Apply Factory Pattern to **Plane** 
 - Following is the implementation**:** 
@@ -44,19 +44,19 @@ We have created **PlaneFactory** interface and implemented in **HelicopterFactor
 
 With implementation of Factory pattern, we can easily add or remove features from the actual product without making changes in the product classes. (Analogous to an actual factory) 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.003.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.003.png)
 
 **Fig. PlaneFactory Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.004.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.004.jpeg)
 
 **Fig. HelicoptorFactory Class** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.005.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.005.jpeg)
 
 **Fig. PassengerDroneFactory Class** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.006.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.006.jpeg)
 
 **Fig. PassengerPlaneFactory Class**
 
@@ -72,15 +72,15 @@ Please note: A common method in the interface could’ve been added if we take t
 
 As the params for *createPayment*() is different, no method in the interface. 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.007.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.007.png)
 
 **Fig. PaymentFactory Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.008.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.008.png)
 
 **Fig. PaypalFactory Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.009.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.009.png)
 
 **Fig. CreditCardFactory Class**
 
@@ -89,15 +89,15 @@ As the params for *createPayment*() is different, no method in the interface.
 - We have applied the Observer Pattern in the **Passenger** and **ScheduledFlight** classes of the project. The idea is to notify the passengers about their scheduled flight. To do so, we have created an interface FlightObserver which has method *notify*(). 
 - Whenever, a Flight gets Scheduled the method *notifyPassengers()* is called from the class which calls the notify() method of each passengers through the interface FlightObserver. 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.010.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.010.jpeg)
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.011.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.011.jpeg)
 
 **Fig. FlightObserver Interface**
 
 - The Passenger class implements the interface FlightObserver and has the method notify() which when invoked prints the message to the user about the scheduled flight. 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.012.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.012.jpeg)
 
 **Fig. Passenger Class**
 
@@ -107,7 +107,7 @@ As the params for *createPayment*() is different, no method in the interface.
 - Adapters can not only convert data into various formats but can also help objects with different interfaces collaborate. 
 - Following changes have been done to implement Adaptor Pattern:** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.013.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.013.jpeg)
 
 **Fig. PaypalDao Class**
 
@@ -123,11 +123,11 @@ As the params for *createPayment*() is different, no method in the interface.
 - The Builder pattern can be applied when construction of various representations of the product involves similar steps that differ only in the details. 
 - Following changes have been done to implement Builder Pattern: 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.014.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.014.png)
 
 **Fig. FlightBuilder Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.015.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.015.png)
 
 **Fig. HelicoptorFactory Class** 
 
@@ -142,15 +142,15 @@ As the params for *createPayment*() is different, no method in the interface.
 - The Strategy pattern lets you do away with such a conditional by extracting all algorithms into separate classes, all of which implement the same interface. The original object delegates execution to one of these objects, instead of implementing all variants of the algorithm. 
 - Following changes have been done to implement Strategy Pattern: 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.016.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.016.png)
 
 **Fig. PayStrategy Interface**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.017.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.017.png)
 
 **Fig. PayByPayPalStrategy Class** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.018.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.018.jpeg)
 
 **Fig. PayByCreditCardStrategy Class** 
 
@@ -166,7 +166,7 @@ As the params for *createPayment*() is different, no method in the interface.
 - A container can be composed of both leaves and other containers. This lets you construct a nested recursive object structure that resembles a tree. 
 - Following changes have been done to implement Composite Pattern:** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.019.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.019.jpeg)
 
 **Fig. CompositePayment Class**
 
@@ -184,15 +184,15 @@ As the params for *createPayment*() is different, no method in the interface.
 - The Command pattern can turn a specific method call into a stand-alone object. This change opens up a lot of interesting uses: you can pass commands as method arguments, store them inside other objects, switch linked commands at runtime, etc. 
 - Following changes have been done to implement Command Pattern:** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.020.png) ![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.021.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.020.png) ![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.021.png)
 
 **Fig. Command & CommandHistory Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.022.png) ![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.023.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.022.png) ![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.023.png)
 
 **Fig. GetAllFlightsCommand & GetAllAirportsCommand Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.024.png) ![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.025.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.024.png) ![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.025.jpeg)
 
 - *Airports*, *Aircrafts* and *Flights* array are created in **Runner** class. This can be considered as information that can be made available to the **Customer** before he/she/they decide to book the **FlightOrder**. 
 - Thus, customer can request this information as **Command** objects and we can queue these requests using **CommandHistory** so that it can be retrieved later as well.  
@@ -206,27 +206,27 @@ VIII.  Chain of Responsibility (Behavioural Pattern)
 - **Chain of Responsibility** is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain. 
 - Following changes have been done to implement Command Pattern:** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.026.png)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.026.png)
 
 **Fig. Creator Package**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.027.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.027.jpeg)
 
 **Fig. Creator Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.028.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.028.jpeg)
 
 **Fig. AircraftCreator Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.029.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.029.jpeg)
 
 **Fig. AirportCreator Class** 
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.030.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.030.jpeg)
 
 **Fig. FlightCreator Class**
 
-![](Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.031.jpeg)
+![](screenshots/Aspose.Words.811ed695-e7f6-46e8-9964-469145352929.031.jpeg)
 
 **Fig. main() and init() in Runner Class**
 
